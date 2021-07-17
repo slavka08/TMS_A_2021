@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Letters calculator</string>
+    <string name="second_word_hint">Second Word (only russian letters)</string>
+    <string name="first_word_hint">First Word (only russian letters)</string>
+    <string name="select_operation">Select operation:</string>
+    <string name="calculate">Calculate</string>
+</resources>
