@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MagicBall</string>
+    <string name="enter_question">Введите вопрос!</string>
+    <string name="find_answer">Узнать ответ</string>
+    <string name="u_question">Ваш вопрос</string>
+    <string-array
+        name="string_array_answers">
+        <item>Да</item>
+        <item>Нет</item>
+        <item>Скорее всего да</item>
+        <item>Скорее всего нет</item>
+        <item>Возможно</item>
+        <item>Имеются перспективы</item>
+        <item>Вопрос задан неверно</item>
+    </string-array>
+
+</resources>
