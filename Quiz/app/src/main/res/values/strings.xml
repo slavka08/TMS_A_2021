@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="q1">В Полотняной стране
+По реке Простыне
+Плывет пароход
+То назад, то вперед,
+А за ним такая гладь —
+Ни морщинки не видать.</string>
+    <string name="qa1">Утюг</string>
+    <string name="q2">Стоит дуб,
+В нем двенадцать гнезд,
+В каждом гнезде
+По четыре яйца,
+В каждом яйце
+По семи цыпленков.</string>
+    <string name="qa2">Год</string>
+    <string name="q3">Речка спятила с ума —
+По домам пошла сама.</string>
+    <string name="qa3">Водопровод</string>
+    <string name="q4">Музыкант, певец, рассказчик —
+А всего труба да ящик.</string>
+    <string name="qa4">Граммофон</string>
+    <string name="gameOver">Game Over. Все загадки отгаданы</string>
+    <string name="correctAns">Правильно! Держи новую загадку</string>
+    <string name="notCorrectAns">Неправильно! Попыток до показа правильного ответа: </string>
+    <string name="correctAnsShow">Правильный ответ: </string>
+</resources>
