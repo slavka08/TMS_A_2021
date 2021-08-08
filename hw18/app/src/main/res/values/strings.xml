@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">hw18</string>
+    <string name="product_potato">Картофель: </string>
+    <string name="product_cabbage">Капуста: </string>
+    <string name="product_beetroot">Свекла: </string>
+    <string name="region_minsk">Минская</string>
+    <string name="region_brest">Брестская</string>
+    <string name="region_grodno">Гродненская</string>
+    <string name="result">результат: </string>
+    <string name="weigth_tons">тонн</string>
+    <string name="leaders">Области лидеры</string>
+    <string name="winners">Области победители, первые набравшие 100 тонн</string>
+</resources>

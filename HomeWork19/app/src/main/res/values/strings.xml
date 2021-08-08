@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HomeWork19</string>
+    <string name="pl">PL</string>
+    <string name="jp">JPN</string>
+    <string name="de">DE</string>
+    <string name="it">IT</string>
+    <string name="irq">IRQ</string>
+</resources>
