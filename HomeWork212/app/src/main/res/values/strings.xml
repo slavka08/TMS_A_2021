@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HomeWork21</string>
+
+    <string name="channel_name" translatable="false">channel_name</string>
+    <string name="channel_description" translatable="false">channel_description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="time">Time:</string>
+    <string name="theme_caption">Theme:</string>
+    <string name="sender_caption">Sender:</string>
+    <string name="open_music_in_service">Open music in service</string>
+    <string name="mail_fragments">Mail fragments</string>
+    <string name="open_from_device">Open *.mp3 from device</string>
+    <string name="open_from_assets">Open from assets</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="plays">Playing: </string>
+</resources>

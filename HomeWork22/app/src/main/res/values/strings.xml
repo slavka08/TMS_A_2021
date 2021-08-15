@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HomeWork22</string>
+    <string name="enter_login">Enter you login</string>
+    <string name="Password">Password</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_suffix">"@gmail.com"</string>
+    <string name="button">Button</string>
+    <string name="error_mail">Invalid email</string>
+    <string name="login_ok">Login in is ok</string>
+    <string name="error_login">Error, something wrong</string>
+    <string name="error_pass">Password cannot be empty</string>
+</resources>
