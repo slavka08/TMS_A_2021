@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ДЗ 21</string>
+    <string name="time">Время:</string>
+    <string name="theme_caption">Тема:</string>
+    <string name="sender_caption">Отправитель:</string>
+    <string name="open_music_in_service">Открыть музыку в сервисе</string>
+    <string name="mail_fragments">Почтовые фрагменты</string>
+    <string name="open_from_device">Открыть *.mp3 с устройства</string>
+    <string name="open_from_assets">Открыть из ассетов</string>
+    <string name="pause">Пауза</string>
+    <string name="play">Играть</string>
+    <string name="stop">Стоп</string>
+    <string name="plays">"Играет: "</string>
+</resources>
