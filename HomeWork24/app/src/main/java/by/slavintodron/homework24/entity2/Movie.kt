@@ -1,0 +1,12 @@
+package by.slavintodron.homework24.entity2
+
+data class Movie(
+    val bio: String,
+    val createdby: String,
+    val firstappearance: String,
+    val imageurl: String,
+    val name: String,
+    val publisher: String,
+    val realname: String,
+    val team: String
+)
