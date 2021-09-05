@@ -3,6 +3,7 @@ package by.slavintodron.hw27
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,11 +28,10 @@ class MainActivity : AppCompatActivity() {
     private fun initObservers() {
         viewModel.weather.observe(this, {
             adapter?.submitList(it.list)
-            binding.textViewError.visibility = View.GONE
+
         })
         viewModel.error.observe(this, {
-            binding.textViewError.text = getString(R.string.error, it)
-            binding.textViewError.visibility = View.VISIBLE
+            Toast.makeText(this, getString(R.string.error, it), Toast.LENGTH_SHORT).show()
         })
     }
 
