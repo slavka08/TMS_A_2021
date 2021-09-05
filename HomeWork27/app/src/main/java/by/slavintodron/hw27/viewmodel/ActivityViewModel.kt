@@ -9,6 +9,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ActivityViewModel : ViewModel() {
+    private val _error = MutableLiveData<String>()
+    val error get() = _error
     private val _weather = MutableLiveData<WeatherEntity>()
     val weather get() = _weather
     fun getWeather(city: String) {
@@ -22,6 +24,7 @@ class ActivityViewModel : ViewModel() {
             }
 
             override fun onFailure(call: Call<WeatherEntity>, t: Throwable) {
+                _error.value = t.localizedMessage
             }
         })
     }

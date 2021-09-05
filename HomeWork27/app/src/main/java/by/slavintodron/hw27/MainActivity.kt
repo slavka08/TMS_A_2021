@@ -20,24 +20,28 @@ class MainActivity : AppCompatActivity() {
         initialData()
         initRv()
         initObservers()
-        initClicLesteners()
-
+        initClicListeners()
         setContentView(binding.root)
     }
 
     private fun initObservers() {
         viewModel.weather.observe(this, {
             adapter?.submitList(it.list)
+            binding.textViewError.visibility = View.GONE
+        })
+        viewModel.error.observe(this, {
+            binding.textViewError.text = getString(R.string.error, it)
+            binding.textViewError.visibility = View.VISIBLE
         })
     }
 
-    private fun initRv(){
+    private fun initRv() {
         adapter = WeatherAdapter()
         binding.rvWeather.layoutManager = LinearLayoutManager(this)
         binding.rvWeather.adapter = adapter
     }
 
-    private fun initClicLesteners(){
+    private fun initClicListeners() {
         binding.spinnerCity.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -49,12 +53,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-
             }
         }
     }
 
-    private fun initialData(){
+    private fun initialData() {
         viewModel.getWeather(binding.spinnerCity.selectedItem.toString())
     }
 
