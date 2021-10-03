@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/sort"
+        android:entryValues="@array/sort_values"
+        android:key="db_filter"
+        android:summary="filter"
+        android:title="Sort" />
+</PreferenceScreen>
