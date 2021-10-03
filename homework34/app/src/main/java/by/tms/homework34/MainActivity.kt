@@ -1,10 +1,9 @@
 package by.tms.homework34
 
-import android.R.attr
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import by.tms.homework34.databinding.ActivityMainBinding
-import android.R.attr.password
+import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
 
 
@@ -14,21 +13,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        emailChangeObservable = binding.tvLogin.textChangeEvents(email)
-        passwordChangeObservable = RxTextView.textChangeEvents(password)
-
-// force-disable the button
-
-// force-disable the button
-        submitButton.setEnabled(false)
-
+        val emailChangeObservable = RxTextView.textChangeEvents(binding.tvLogin)
+        val passwordChangeObservable = RxTextView.textChangeEvents(binding.tvPassword)
+        binding.button.isEnabled = false
         Observable.combineLatest(
             emailChangeObservable, passwordChangeObservable
         ) { emailObservable, passwordObservable ->
-            val emailCheck: Boolean = emailObservable.text().length() >= 3
-            val passwordCheck: Boolean = passwordObservable.text().length() >= 3
+            val emailCheck: Boolean = emailObservable.text().length >= 1
+            val passwordCheck: Boolean = passwordObservable.text().length >= 1
             emailCheck && passwordCheck
-        }.subscribe { aBoolean -> submitButton.setEnabled(aBoolean) }
+        }.subscribe { aBoolean -> binding.button.isEnabled = aBoolean }
     }
 }
